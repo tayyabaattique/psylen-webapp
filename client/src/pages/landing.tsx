@@ -2,20 +2,25 @@ import { useState } from "react";
 import { Heart, Sprout, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import ThemeToggle from "@/components/theme-toggle";
 
 export default function Landing() {
   return (
-    <div className="bg-warm-gray font-inter text-text-soft min-h-screen">
+    <div className="bg-warm-gray dark:bg-gray-900 font-inter text-text-soft dark:text-gray-100 min-h-screen transition-colors duration-300">
       {/* Header */}
-      <header className="bg-white shadow-sm border-b border-lavender/20">
+      <header className="bg-white dark:bg-gray-900 shadow-sm border-b border-lavender/20 dark:border-gray-700">
         <div className="max-w-lg mx-auto px-4 py-6">
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-between">
+            <div className="w-10"></div>
+            
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-lavender to-sage rounded-full flex items-center justify-center">
                 <Sprout className="text-white" size={20} />
               </div>
-              <h1 className="text-2xl font-semibold text-text-soft">Psylen</h1>
+              <h1 className="text-2xl font-semibold text-text-soft dark:text-white">Psylen</h1>
             </div>
+            
+            <ThemeToggle />
           </div>
         </div>
       </header>
