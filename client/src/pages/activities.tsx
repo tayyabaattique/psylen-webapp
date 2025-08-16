@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Sprout, ArrowLeft } from "lucide-react";
+import { Flower2, ArrowLeft } from "lucide-react";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import ThemeToggle from "@/components/theme-toggle";
@@ -27,7 +27,7 @@ export default function Activities() {
             
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-br from-lavender to-sage rounded-full flex items-center justify-center">
-                <Sprout className="text-white text-sm" size={16} />
+                <Flower2 className="text-white text-sm" size={16} />
               </div>
               <h1 className="text-xl font-semibold text-text-soft dark:text-white">Psylen</h1>
             </div>

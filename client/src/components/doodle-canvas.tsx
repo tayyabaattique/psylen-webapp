@@ -112,20 +112,20 @@ export default function DoodleCanvas() {
 
   return (
     <section className="py-6">
-      <div className="bg-white rounded-2xl p-6 shadow-lg border border-lavender/10 animate-slide-up">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-lavender/10 dark:border-gray-700 animate-slide-up">
         <div className="text-center mb-6">
           <div className="w-12 h-12 bg-peach rounded-full flex items-center justify-center mx-auto mb-3">
             <PaintbrushVertical className="text-sage text-lg" size={20} />
           </div>
-          <h2 className="text-2xl font-semibold text-text-soft mb-2">Express Yourself</h2>
-          <p className="text-gray-500">Let your creativity flow freely on the canvas</p>
+          <h2 className="text-2xl font-semibold text-text-soft dark:text-white mb-2">Express Yourself</h2>
+          <p className="text-gray-500 dark:text-gray-300">Let your creativity flow freely on the canvas</p>
         </div>
 
         {/* Canvas Container */}
-        <div className="bg-white rounded-2xl border-2 border-dashed border-lavender/30 p-4 mb-6">
+        <div className="bg-white dark:bg-gray-700 rounded-2xl border-2 border-dashed border-lavender/30 dark:border-gray-600 p-4 mb-6">
           <canvas
             ref={canvasRef}
-            className="drawing-canvas w-full bg-white rounded-xl"
+            className="drawing-canvas w-full bg-white dark:bg-gray-600 rounded-xl"
             width={400}
             height={300}
             onMouseDown={startDrawing}

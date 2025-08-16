@@ -139,13 +139,13 @@ export default function JournalSection() {
     <section className="py-6">
       <div className="space-y-6">
         {/* New Entry Card */}
-        <div className="bg-white rounded-2xl p-6 shadow-lg border border-lavender/10 animate-slide-up">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-lavender/10 dark:border-gray-700 animate-slide-up">
           <div className="text-center mb-6">
             <div className="w-12 h-12 bg-peach rounded-full flex items-center justify-center mx-auto mb-3">
               <FeatherIcon className="text-sage text-lg" size={20} />
             </div>
-            <h2 className="text-2xl font-semibold text-text-soft mb-2">Journal</h2>
-            <p className="text-gray-500">Reflect on your thoughts and feelings</p>
+            <h2 className="text-2xl font-semibold text-text-soft dark:text-white mb-2">Journal</h2>
+            <p className="text-gray-500 dark:text-gray-300">Reflect on your thoughts and feelings</p>
           </div>
 
           {/* New Entry Form */}
@@ -190,19 +190,19 @@ export default function JournalSection() {
         <div className="space-y-4">
           {isLoading ? (
             <div className="text-center py-8">
-              <p className="text-gray-500">Loading your entries...</p>
+              <p className="text-gray-500 dark:text-gray-300">Loading your entries...</p>
             </div>
           ) : entries && entries.length > 0 ? (
             entries.map((entry) => (
               <div
                 key={entry.id}
-                className="journal-entry rounded-2xl p-5 shadow-md border border-peach/20 animate-slide-up"
+                className="journal-entry rounded-2xl p-5 shadow-md border border-peach/20 dark:border-gray-700 dark:bg-gray-800 animate-slide-up"
               >
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="font-semibold text-text-soft">{entry.title}</h3>
-                  <span className="text-sm text-gray-400">{formatDate(entry.createdAt)}</span>
+                  <h3 className="font-semibold text-text-soft dark:text-white">{entry.title}</h3>
+                  <span className="text-sm text-gray-400 dark:text-gray-400">{formatDate(entry.createdAt)}</span>
                 </div>
-                <p className="text-gray-600 leading-relaxed mb-4">{entry.content}</p>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">{entry.content}</p>
                 <div className="flex space-x-2">
                   <Button
                     variant="ghost"
@@ -225,7 +225,7 @@ export default function JournalSection() {
             ))
           ) : (
             <div className="text-center py-8">
-              <p className="text-gray-500">No journal entries yet. Start writing your first entry above!</p>
+              <p className="text-gray-500 dark:text-gray-300">No journal entries yet. Start writing your first entry above!</p>
             </div>
           )}
         </div>

@@ -72,7 +72,7 @@ export default function ExercisesSection() {
           <p>3. Breathe out for 4 counts</p>
           <p>4. Hold for 4 counts</p>
         </div>
-        <p className="text-gray-500 mt-4 text-sm">Repeat this cycle several times until you feel calm.</p>
+        <p className="text-gray-500 dark:text-gray-300 mt-4 text-sm">Repeat this cycle several times until you feel calm.</p>
       </div>
     </div>
   );
@@ -84,7 +84,7 @@ export default function ExercisesSection() {
       </div>
       <h3 className="text-xl font-semibold mb-4">Gratitude Moment</h3>
       <div className="space-y-4">
-        <p className="text-gray-600">Take a moment to reflect on three things you're grateful for today:</p>
+        <p className="text-gray-600 dark:text-gray-300">Take a moment to reflect on three things you're grateful for today:</p>
         <div className="space-y-3">
           {gratitudeItems.map((item, index) => (
             <Input
@@ -97,7 +97,7 @@ export default function ExercisesSection() {
             />
           ))}
         </div>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-500 dark:text-gray-300">
           Take a deep breath and let these feelings of gratitude fill your heart.
         </p>
       </div>
@@ -106,13 +106,13 @@ export default function ExercisesSection() {
 
   return (
     <section className="py-6">
-      <div className="bg-white rounded-2xl p-6 shadow-lg border border-lavender/10 animate-slide-up">
+      <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-lavender/10 dark:border-gray-700 animate-slide-up">
         <div className="text-center mb-6">
           <div className="w-12 h-12 bg-peach rounded-full flex items-center justify-center mx-auto mb-3">
             <Brain className="text-sage text-lg" size={20} />
           </div>
-          <h2 className="text-2xl font-semibold text-text-soft mb-2">Mindful Exercises</h2>
-          <p className="text-gray-500">Ground yourself with awareness techniques</p>
+          <h2 className="text-2xl font-semibold text-text-soft dark:text-white mb-2">Mindful Exercises</h2>
+          <p className="text-gray-500 dark:text-gray-300">Ground yourself with awareness techniques</p>
         </div>
 
         {/* Exercise Cards */}

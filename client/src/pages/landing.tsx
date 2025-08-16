@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Heart, Sprout, ArrowRight, Sparkles } from "lucide-react";
+import { Heart, Flower2, ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import ThemeToggle from "@/components/theme-toggle";
@@ -15,7 +15,7 @@ export default function Landing() {
             
             <div className="flex items-center space-x-3">
               <div className="w-10 h-10 bg-gradient-to-br from-lavender to-sage rounded-full flex items-center justify-center">
-                <Sprout className="text-white" size={20} />
+                <Flower2 className="text-white" size={20} />
               </div>
               <h1 className="text-2xl font-semibold text-text-soft dark:text-white">Psylen</h1>
             </div>
@@ -35,27 +35,27 @@ export default function Landing() {
               <Heart className="text-white" size={32} />
             </div>
             
-            <h2 className="text-3xl font-bold text-text-soft leading-tight">
+            <h2 className="text-3xl font-bold text-text-soft dark:text-white leading-tight">
               Take a moment to breathe
             </h2>
             
-            <p className="text-lg text-gray-600 leading-relaxed px-4">
+            <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed px-4">
               When life feels overwhelming, you deserve a peaceful space to reset your mind and heart.
             </p>
           </div>
 
           {/* Purpose Card */}
-          <div className="bg-white rounded-2xl p-6 shadow-lg border border-lavender/10 animate-slide-up">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg border border-lavender/10 dark:border-gray-700 animate-slide-up">
             <div className="text-center space-y-4">
               <div className="w-12 h-12 bg-lavender/30 rounded-full flex items-center justify-center mx-auto">
                 <Sparkles className="text-sage" size={20} />
               </div>
               
-              <h3 className="text-xl font-semibold text-text-soft">
+              <h3 className="text-xl font-semibold text-text-soft dark:text-white">
                 You're not alone
               </h3>
               
-              <p className="text-gray-600 leading-relaxed">
+              <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                 Whether you're feeling anxious, stressed, or down, Psylen offers gentle activities to help you find calm and clarity in difficult moments.
               </p>
             </div>
@@ -63,7 +63,7 @@ export default function Landing() {
 
           {/* Features Preview */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-text-soft text-center mb-6">
+            <h3 className="text-lg font-semibold text-text-soft dark:text-white text-center mb-6">
               What's waiting for you:
             </h3>
             
@@ -73,8 +73,8 @@ export default function Landing() {
                   <span className="text-sage text-lg">✏️</span>
                 </div>
                 <div>
-                  <h4 className="font-medium text-text-soft">Creative Expression</h4>
-                  <p className="text-sm text-gray-600">Draw your feelings away</p>
+                  <h4 className="font-medium text-text-soft dark:text-white">Creative Expression</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Draw your feelings away</p>
                 </div>
               </div>
               
@@ -83,8 +83,8 @@ export default function Landing() {
                   <span className="text-white text-lg">📝</span>
                 </div>
                 <div>
-                  <h4 className="font-medium text-text-soft">Journal Space</h4>
-                  <p className="text-sm text-gray-600">Write out your thoughts</p>
+                  <h4 className="font-medium text-text-soft dark:text-white">Journal Space</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Write out your thoughts</p>
                 </div>
               </div>
               
@@ -93,8 +93,8 @@ export default function Landing() {
                   <span className="text-white text-lg">🧘</span>
                 </div>
                 <div>
-                  <h4 className="font-medium text-text-soft">Mindful Moments</h4>
-                  <p className="text-sm text-gray-600">Ground yourself in the present</p>
+                  <h4 className="font-medium text-text-soft dark:text-white">Mindful Moments</h4>
+                  <p className="text-sm text-gray-600 dark:text-gray-300">Ground yourself in the present</p>
                 </div>
               </div>
             </div>
@@ -102,7 +102,7 @@ export default function Landing() {
 
           {/* Call to Action */}
           <div className="text-center space-y-6 pt-4">
-            <p className="text-gray-600 text-sm px-4">
+            <p className="text-gray-600 dark:text-gray-300 text-sm px-4">
               Take as long as you need. This is your space.
             </p>
             
@@ -116,7 +116,7 @@ export default function Landing() {
 
           {/* Gentle Reminder */}
           <div className="text-center pt-6 pb-8">
-            <p className="text-xs text-gray-500 italic px-6">
+            <p className="text-xs text-gray-500 dark:text-gray-400 italic px-6">
               "Healing is not a destination, but a gentle journey back to yourself."
             </p>
           </div>
