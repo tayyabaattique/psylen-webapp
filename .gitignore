@@ -1,6 +1,65 @@
-node_modules
-dist
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production build
+dist/
+build/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Cache directories
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Replit specific files (EXCLUDE FROM GIT)
+.replit
+replit.nix
+replit.md
+
+# Chat/conversation history and AI files
+*.md.backup
+conversation.*
+chat.*
+autopilot.*
+
+# Temporary files
+*.tmp
+*.temp
+*.tar.gz
+
+# Server public files
 server/public
 vite.config.ts.*
-*.tar.gz
